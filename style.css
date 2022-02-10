@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* PRIMARY COLORS */
+  --cyan: #66e2dc;
+  --red: #fa7452;
+  --orange: #ffb964;
+
+  /* NEUTRAL COLORS */
+
+  --white: #fcfaf9;
+  --black: #191826;
+}
+
+h1 {
+  font-size: 5.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+/* NEED TO SET FONT SIZE */
+footer {
+}
