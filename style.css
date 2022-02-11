@@ -15,7 +15,7 @@
   --white: #fcfaf9;
   --black: #191826;
 
-  --radius: 12px;
+  --radius: 0.75rem;
 }
 
 h1 {
@@ -38,6 +38,7 @@ body {
 
   display: grid;
   margin: 0 10rem;
+  overflow-x: hidden;
 }
 
 img {
@@ -45,26 +46,16 @@ img {
   display: flex;
 }
 
-button {
-  border: none;
-  border-radius: var(--radius);
-  height: 3.8125rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .bg-pattern-frame {
   position: absolute;
   z-index: -1;
-  right: 0;
+  right: -50px;
   top: -50px;
 }
 
 .logo-frame {
   margin-top: 2rem;
-  width: 10rem;
+  width: 125px;
 }
 
 .heading-container {
@@ -82,8 +73,9 @@ button {
 
 .bg-box {
   justify-self: center;
-
+  margin-bottom: 13rem;
   width: 100%;
+  max-width: 1152px;
   height: 37.5rem;
   margin-top: 20rem;
   background-color: var(--black);
@@ -139,13 +131,30 @@ button {
 }
 
 .price > span {
-  font-size: 4.0625rem;
+  font-size: 52px;
   font-weight: 700;
   margin-right: 1rem;
 }
 
+button {
+  border: none;
+  border-radius: var(--radius);
+  padding: 1.25rem 0;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .iOS-button {
   margin-bottom: 1rem;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.android-button {
+  background-color: var(--white);
 }
 
 button > div {
@@ -153,7 +162,6 @@ button > div {
 }
 
 footer {
-  margin-top: 12rem;
   margin-bottom: 5rem;
   height: max-content;
 
@@ -185,4 +193,132 @@ footer span {
 }
 .social-media-icon-frame {
   width: 1.5rem;
+}
+
+@media only screen and (min-width: 1470px) {
+}
+
+@media only screen and (max-width: 1180px) {
+  body {
+    margin: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .heading-container {
+    width: 40rem;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .heading-container {
+    width: 40rem;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  html {
+    font-size: 0.85em;
+  }
+
+  .bg-pattern-frame {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .cta-card {
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  html {
+    font-size: 0.75em;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  html {
+    font-size: 0.7em;
+  }
+
+  .heading-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  html {
+    font-size: 0.55em;
+  }
+  body {
+    margin: 3rem 0;
+  }
+
+  p,
+  footer > p {
+    font-size: 16px;
+  }
+
+  button {
+    padding: 1.75rem;
+  }
+
+  .heading-container,
+  body > .logo-frame,
+  footer {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .heading-container > p {
+    width: 90%;
+  }
+
+  .bg-pattern-frame {
+    display: none;
+  }
+
+  .bg-box {
+    margin-bottom: 50rem;
+  }
+
+  .illustration-app-frame,
+  .bg-pattern-2-frame {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .bg-pattern-2-frame {
+    width: 25rem;
+  }
+
+  .bg-pattern-2-frame > img {
+    transform: unset;
+  }
+
+  .cta-card {
+    position: relative;
+    width: 100%;
+    top: 32rem;
+  }
+
+  footer {
+    grid-auto-flow: row;
+    row-gap: 5rem;
+  }
+
+  footer > p {
+    width: 100%;
+  }
+
+  .social-media-container {
+    place-self: start;
+    width: 50%;
+  }
+
+  .social-media-icon-frame {
+    width: 30px;
+  }
 }
