@@ -46,6 +46,10 @@ img {
   display: flex;
 }
 
+svg {
+  transform: scale(1.5);
+}
+
 .bg-pattern-frame {
   position: absolute;
   z-index: -1;
@@ -70,6 +74,8 @@ img {
 .heading-container > p {
   line-height: 1.5;
 }
+
+/* BACKGROUND BOX STYLES */
 
 .bg-box {
   justify-self: center;
@@ -161,6 +167,8 @@ button > div {
   margin-right: 0.5rem;
 }
 
+/* FOOTER STYLES */
+
 footer {
   margin-bottom: 5rem;
   height: max-content;
@@ -186,7 +194,7 @@ footer span {
 
 .social-media-container {
   place-self: center end;
-  width: 8rem;
+  width: 12rem;
 
   display: flex;
   justify-content: space-around;
@@ -194,6 +202,26 @@ footer span {
 .social-media-icon-frame {
   width: 1.5rem;
 }
+
+/* HOVER STATES */
+
+button:hover,
+svg:hover {
+  cursor: pointer;
+}
+
+.iOS-button:hover {
+  background-color: var(--cyan);
+}
+
+.android-button:hover {
+  background-color: var(--orange);
+}
+
+svg:hover {
+  fill: var(--orange);
+}
+/* MEDIA QUERIES */
 
 @media only screen and (min-width: 1470px) {
 }
